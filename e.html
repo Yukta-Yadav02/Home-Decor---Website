@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container{
+            max-width: 760px;
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+            .col-md-6 {
+                position: static !important;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .mt-5 {
+                margin-top: 0 !important;
+            }
+            .p-0 img {
+                height: auto;
+            }
+            .bg-success {
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .col-md-6:first-child {
+                position: absolute;
+                top: 50%;
+                start: 0;
+                transform: translateY(-50%);
+                z-index: 1;
+                width: 30%; /* Match width to medium screen */
+                height: 55%;
+                padding: 20px; /* Adjust padding */
+            }
+            .bg-success {
+                width: 100%; /* Ensure consistency */
+                padding-top: 20px; /* Maintain padding */
+            }
+        }
+
+    </style>
+    <title>Responsive Layout</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Text Section -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-start bg-success text-white p-5" style="z-index: 1;">
+            <h1 class="display-4 fw-bold">Crafted with Care<br>for Memorable Moments.</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <a href="#" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="col-md-6 p-0 mt-5 position-relative mx-auto">
+            <img src="hero-image.jpg" alt="Decorative Garden" class="img-fluid w-100 h-100">
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

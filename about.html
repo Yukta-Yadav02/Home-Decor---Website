@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="home.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Latest Version -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">
+        <img src="Images/logo.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item px-3">
+            <a class="nav-link" aria-current="page" href="allProduct.html">All Products</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="homeDecor.html">Home Decor</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="gardenDecor.html">Garden Decor</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-link pt-0 ms-5">
+            <a class="nav-link" href="#cartModal" data-bs-toggle="modal">
+              <i class="fa-solid fa-shopping-cart"></i>
+              <span class="badge bg-danger" id="cart-count">0</span>
+            </a>
+          </li>
+          <!-- <li class="nav-link pt-0 ms-5">
+            <a class="nav-link" href="#">
+            <i class="fa-solid fa-user ms-5"></i>
+          </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   
+      
+      <div class="container-fluid">
+        <div class="row height">
+          <div class="col bg text-center p-5">
+           <h1 class="pt-5 pb-4 mt-5 display-3"><b>Style Is What You Make It</b></h1>
+           <p>Natoque euismod a hic porta. Auctor, consequatur occaecati magna natus pretium ornare ornare penatibus. <br> Tempor viverra erat veritatis</p>
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+  <div class="row top">
+    <img src="Images/about-image.jpg" class="img-fluid" alt="">
+  </div>
+        <div class="row mt-5 d-flex justify-content-center align-items-center">
+          <div class="col-sm col-md-6 mt-3">
+            <img class="img-fluid " src="Images/unique-image.jpg" alt="" />
+          </div>
+          <div class="col-sm col-md-6 mt-3">
+            <h2 class="fw-bold display-5 ">Who We Are</h2>
+            <p class="fs-6">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+              fugit sed quia consequuntur magni dolores eos qui ratione voluptatem
+              sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt.
+            </p>
+          </div>
+          <div class="col-sm col-md-6 mt-3 ">
+            <h2 class="fw-bold display-5">Our Mission</h2>
+            <p class="fs-6">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione
+               voluptatem sequi nesciunt. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos 
+               qui ratione voluptatem sequi nesciunt.
+            </p>
+          </div>
+          <div class="col-sm col-md-6 text-end mt-3">
+            <img class="img-fluid" src="Images/highend-image.jpg" alt="" />
+          </div>
+        </div>
+  
+  
+
+      <div class="row mt-5">
+        <div class="col-sm col-md-12 col-lg-4 text-center my-lg-5">
+          
+       <img class="img-fluid" src="Images/founder.jpg" alt="">
+        </div>
+        <div class="col-sm col-md-12 col-lg-8 text-white p-5 my-lg-5" style="background-color:#2DA884">
+          <div class="my-5">
+            <p class="">Founder</p>
+            <h2 class="fw-bold display-4">Elizabeth Harris</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Ut elit tellus , luctus <br> nec ullamcorper mattis, pulvinar davipus leo.</p>
+           <div>
+            <i class="fa-brands fa-facebook icon-c3 p-3"></i>
+            <i class="fa-brands fa-twitter icon-c3 pe-3"></i>
+            <i class="fa-brands fa-youtube icon-c3"></i>
+           </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+<!-- Product Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="productModalImage" class="img-fluid mb-3" src="" alt="Product Image">
+        <h5 id="productModalName"></h5>
+        <p>Price: $<span id="productModalPrice"></span></p>
+        <div>
+          <label for="quantity" class="form-label">Quantity:</label>
+          <input type="number" id="quantity" class="form-control" value="1" min="1">
+        </div>
+        <p class="mt-3">Total: $<span id="modalTotalPrice"></span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Cart Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+              <!-- Empty cart message -->
+        <div id="empty-cart-message" class="text-center text-muted" style="display: none;">
+          No products in the cart.
+        </div>
+          <ul id="cart-items" class="list-group"></ul>
+          <hr />
+          <p>Total Price: $<span id="cart-total-price">0.00</span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+
+      <div class="container-fluid bg mt-5">
+        <div class="text-center"> 
+         <img class="wh mt-5" src="Images/instagram.svg" alt="">
+         <h2 class="mt-3"><b>Follow @antiques</b></h2>
+         <p class="mt-3">Leo nulla cras augue eros, diam vivamus et lectus volutpat at facilisi tortor porta.</p>
+        </div>
+
+        <div class="row text-center">
+          <div class="col mt-4 mb-5">
+            <img class="img-fluid" src="Images/instafeed-image.jpg" alt="">
+          </div>
+        </div>
+</div>
+
+<div class="container-fluid footer-bg text-center">
+  <footer class="row py-4">
+    <div class="col-md-2 mb-3">
+
+    </div>
+
+    <div class="col-sm-12 col-md-2 mb-3">
+      <p class="mt-5"><img src="Images/logo-footer.svg" class="img-fluid" alt=""></p>
+    </div>
+
+    <div class="col-sm-12 col-md-2 my-5">
+      <h5 class="text-white mb-5"><b>Quick Links</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Home</a></li>
+        <li class="nav-item "><a href="#" class="nav-link p-0 shade">Indoor</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Outdoors</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-2 my-5">
+      <h5 class="text-white mb-5"><b>Explore</b></h5>
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Bestsellers</a></li>
+        <li class="nav-item "><a href="#" class="nav-link p-0 shade">On Sale</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Best Of 2022</a></li>
+        <li class="nav-item "><a href="#" class="nav-link p-0 shade ">Featured</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Gift Card</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-2 my-5">
+      <h5 class="text-white mb-5"><b>Help</b></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Track Order</a></li>
+        <li class="nav-item "><a href="#" class="nav-link p-0 shade">Delivery & Returns</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link p-0 shade">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 shade">Community</a></li>
+      </ul>
+      <div class="mt-3">
+        <i class="fa-brands fa-facebook text-white pe-2"></i>
+        <i class="fa-brands fa-twitter text-white pe-2 "></i>
+        <i class="fa-brands fa-youtube text-white"></i>
+      </div>
+    </div>
+
+
+    <div class="border-top">
+      <div class="row pt-5 text-center">
+        <div class="col-sm-12 col-md-6">
+          <p class="text-white"><b>Copyright © 2024 Antiques | Powered by Antiques</b></p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img class="wdth img-fluid" src="Images/payment-image.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+
+
+<script src="home.js"></script>
+</body>
+</html>

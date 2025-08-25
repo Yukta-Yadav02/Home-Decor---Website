@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="img.css" />
+    <style>
+      /* .container {
+            max-width: 760px;
+            margin: auto;
+        } */
+
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+        .col-md-6 {
+          position: relative !important;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .mt-5 {
+          margin-top: 0 !important;
+        }
+        .p-0 img {
+          height: auto;
+        }
+        .bg-success {
+          margin-top: 20px;
+          padding-top: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+          box-sizing: border-box; /* Ensure content stays within bounds */
+          word-wrap: break-word; /* Handle long text gracefully */
+        }
+        .bg-success h1 {
+          font-size: 2rem;
+          line-height: 1.2; /* Adjust line height */
+        }
+        .bg-success p {
+          font-size: 1rem;
+        }
+        /* .btn {
+                font-size: 0.875rem;
+            } */
+      }
+
+      @media (min-width: 769px) {
+        .col-md-6:first-child {
+          position: absolute;
+          top: 50%;
+          left: 0; /* Adjusted for clarity */
+          transform: translateY(-50%);
+          z-index: 1;
+          width: 30%;
+          height: 55%;
+          padding: 20px;
+        }
+        .bg-success {
+          width: 100%;
+          padding-top: 20px;
+        }
+      }
+
+      @media (min-width: 770px) and (max-width: 1400px) {
+        .bg-success {
+          padding: 15px; /* Reduce padding to fit content */
+        }
+        .bg-success h1 {
+          font-size: 2rem; /* Adjust for medium sizes */
+        }
+        .bg-success p {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Text Section -->
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-start bg-success text-white p-5"
+          style="z-index: 1"
+        >
+          <h1 class="display-4 fw-bold">
+            Crafted with Care<br />for Memorable Moments.
+          </h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <a href="#" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="col-md-6 p-0 mt-5 mx-auto">
+          <img
+            src="hero-image.jpg"
+            alt="Decorative Garden"
+            class="img-fluid w-100 h-100"
+          />
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-success btn-wh">
+          <img src="arrow-down.svg" class="w-50" alt="" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
